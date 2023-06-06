@@ -1,0 +1,27 @@
+/* Add application styles & imports to this file! */
+/* You can add global styles to this file, and also import other style files */
+h4 {
+  margin: 0;
+}
+
+button {
+  background-color: rgb(71, 71, 171);
+  color: #fff;
+  border: 2px solid #000;
+  margin: 4px;
+  border-radius: 4px;
+}
+
+.content-sidenav {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

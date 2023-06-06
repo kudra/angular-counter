@@ -1,0 +1,16 @@
+.project-container {
+  height: auto;
+  width: auto;
+  margin: 5% 10%;
+  border: 3px solid #1560bd;
+}
+.main-container {
+  display: flex;
+}
+.aside {
+  width: 25%;
+  border-right: 3px solid #1560bd;
+}
+.article {
+  width: 75%;
+}
