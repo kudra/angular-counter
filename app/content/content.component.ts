@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
       <h4>Content</h4>
     </section>
     <section class="inner_section">
-        <app-counter-button [parentId]="'content'" (emitCount)="emitCount($event)"></app-counter-button>
-        <app-counter-button [parentId]="'content'" (emitCount)="emitCount($event)"></app-counter-button>
+    <app-counter-button [parentId]="'content'" (emitCount)="emitCount($event)">Clicked {{count}} times</app-counter-button>
+    <app-counter-button [parentId]="'content'" (emitCount)="emitCount($event)">Clicked {{count}} times</app-counter-button>
     </section>
   </div>
 </article>`,
@@ -29,7 +29,9 @@ import { Component } from '@angular/core';
 })
 export class ContentComponent {
   isBgred = false;
+  count = 0;
   emitCount(cnt: number) {
+    this.count = cnt;
     this.isBgred = cnt >= 10;
   }
 }
