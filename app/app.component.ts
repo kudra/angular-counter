@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
               </main>
               <app-footer></app-footer>
               </div>`,
-  styleUrls: ['./app.component.scss'],
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
   title = 'counter-app';
