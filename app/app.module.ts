@@ -7,6 +7,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { ContentComponent } from './content/content.component';
 import { CounterButtonComponent } from './counter-button/counter-button.component';
+import { CounterService } from './counter.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { CounterButtonComponent } from './counter-button/counter-button.componen
     CounterButtonComponent,
   ],
   imports: [BrowserModule],
-  providers: [],
+  providers: [CounterService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
