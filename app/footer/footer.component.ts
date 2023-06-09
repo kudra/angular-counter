@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
   selector: 'app-footer',
   template: `<footer [ngStyle]="{'background-color': isBgred ? 'red':''}" class="footer-header-flex">
                   <h4 class="display-block">Footer</h4>
-                  <app-counter-button [parentId]="'footer'" (emitCount)="emitCount($event)">Clicked {{count}} times</app-counter-button>
+                  <app-counter-button  (emitCount)="emitCount($event)">Clicked {{count}} times</app-counter-button>
                 </footer>`,
   styles: [
     `

@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   template: `<aside  [ngStyle]="{'background-color': isBgred ? 'red':''}">
               <div class="content-sidenav">
                   <h4>SideNav</h4>
-                  <app-counter-button [parentId]="'sidenav'" (emitCount)="emitCount($event)">Clicked {{count}} times</app-counter-button>
+                  <app-counter-button  (emitCount)="emitCount($event)">Clicked {{count}} times</app-counter-button>
               </div>
             </aside>`,
 })

@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
       <h4>Content</h4>
     </section>
     <section class="inner_section">
-    <app-counter-button [parentId]="'content'" (emitCount)="emitCount($event)">Clicked {{count}} times</app-counter-button>
-    <app-counter-button [parentId]="'content'" (emitCount)="emitCount($event)">Clicked {{count}} times</app-counter-button>
+    <app-counter-button  (emitCount)="emitCount($event)">Clicked {{count}} times</app-counter-button>
+    <app-counter-button  (emitCount)="emitCount($event)">Clicked {{count}} times</app-counter-button>
     </section>
   </div>
 </article>`,

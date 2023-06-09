@@ -2,16 +2,13 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class CounterService {
-  private counters: { [parentId: string]: number } = {};
+  private counters: number = 0;
 
   incrementCount(parentId: string): void {
-    if (!this.counters[parentId]) {
-      this.counters[parentId] = 0;
-    }
-    this.counters[parentId]++;
+    this.counters++;
   }
 
   getCount(parentId: string): number {
-    return this.counters[parentId] || 0;
+    return this.counters || 0;
   }
 }
